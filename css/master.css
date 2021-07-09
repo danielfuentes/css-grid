@@ -1,44 +1,52 @@
-.container{
-    display: grid;
-    grid-template-rows: repeat(6, auto);
-    
+.grid{
+    display:grid;
 }
 
-.barraNavegacion{
-    display: grid;
-    grid-template-columns: 10% 30%;
-    column-gap: 10px;
+#contenedor{
+    grid-template-rows: repeat(6, auto);
+}
+
+.space-between{
     justify-content: space-between;
+}
+
+.align-center{
     align-items: center;
+}
+
+header{
+    grid-template-columns: 10% 30%;
+    column-gap: 10px;    
     background-color: #B2B8C7;
 }
-.menu{
-    display: grid;
+
+#menu{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
-.titulo{
+
+.title{
     font-size: 2.5rem;
     padding: 20px 0;
 }
-.gatos, .perros{
-    display: grid;
+
+.galery{
     grid-template-columns: repeat(4,1fr);
     gap: 10px;
 }
-.opciones{
-    margin: auto;
-}
-.piePagina{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+
+.center{
     justify-content: center;
-    align-items: center;
+}
+
+footer{
+    grid-template-columns: 1fr 2fr 1fr;
     background-color: #B2B8C7;
 }
-.sociales{
-    display: grid;
+
+#sociales{
     grid-template-columns: repeat(4, 1fr);
 }
-.mapa{
+
+#mapa{
     padding: 30px 0;
 }
