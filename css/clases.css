@@ -1,0 +1,15 @@
+.grid{
+  display:grid;
+}
+
+.space-between{
+  justify-content: space-between;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.center{
+  justify-content: center;
+}
