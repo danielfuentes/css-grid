@@ -6,88 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS-GRID</title>
     <script src="https://kit.fontawesome.com/7968cc1663.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/clases.css">
     <link rel="stylesheet" href="css/master.css">
 </head>
 <body>
-    <main class="container">
-        <header class="encabezado">
-            <nav class="barraNavegacion">
-                <figure class="logo">
-                    <img src="img/logo-daniel.png" alt="Logo">
-                </figure>
-                <ul class="menu">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Mascotas</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
+    <main class="grid" id="container">
+        <header class="grid space-between align-center">
+            <figure class="logo">
+                <img src="img/logo-daniel.png" alt="Logo">
+            </figure>
+            <nav class="grid" id="menu">
+                <a href="#">Inicio</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Mascotas</a>
+                <a href="#">Contacto</a>
             </nav>
         </header>
-        <section class="imagenFondo">
+        <section id="banner">
             <img src="img/img-home-banner1.jpg" alt="Banner de mascotas">
         </section>
         <section class="mensaje">
             <h2 class="titulo">Nuestros gatitos</h2>
         </section>
-        <section class="gatos"> 
-            <article class="gato">
+        <section class="grid gallery"> 
+            <article class="item">
                 <img src="img/gato1.jpg" alt="Gato">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae magnam modi accusantium molestiae minus vero?</p>
             </article>
-            <article class="gato">
+            <article class="item">
                 <img src="img/gato2.jpg" alt="Gato">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae magnam modi accusantium molestiae minus vero?</p>
             </article>
-            <article class="gato">
+            <article class="item">
                 <img src="img/gato3.jpg" alt="Gato">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae magnam modi accusantium molestiae minus vero?</p>
             </article>
-            <article class="gato">
+            <article class="item">
                 <img src="img/gato4.jpg" alt="Gato">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae magnam modi accusantium molestiae minus vero?</p>
             </article>
         </section>
-        <section class="mensaje">
-            <h2 class="titulo">Nustros perritos</h2>
+        <section class="grid">
+            <h2 class="title">Nustros perritos</h2>
         </section>
-        <section class="perros"> 
-            <article class="perro">
+        <section class="grid gallery"> 
+            <article class="item">
                 <img src="img/perro1.jpg" alt="Perro">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae magnam modi accusantium molestiae minus vero?</p>
             </article>
-            <article class="perro">
+            <article class="item">
                 <img src="img/perro2.jpg" alt="Perro">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae magnam modi accusantium molestiae minus vero?</p>
             </article>
-            <article class="perro">
+            <article class="item">
                 <img src="img/perro3.jpg" alt="Perro">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae magnam modi accusantium molestiae minus vero?</p>
             </article>
-            <article class="perro">
+            <article class="item">
                 <img src="img/perro4.jpg" alt="Perro">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae magnam modi accusantium molestiae minus vero?</p>
             </article>
         </section>
-        <footer class="piePagina">
-            <article class="opciones">
-                <ul class="menuFooter">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Mascotas</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>         
-            </article>
-            <article class="mapa">
+        <footer class="grid center align-center">
+            <nav class="grid" id="menuFooter">
+                <a href="#">Inicio</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Mascotas</a>
+                <a href="#">Contacto</a>
+            </nav>
+            <section id="mapa">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.1863648168774!2d-58.44585668518318!3d-34.54883648047371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb436efe09303%3A0xfb39818e7624ac76!2sDigital%20House!5e0!3m2!1ses!2sar!4v1625841075090!5m2!1ses!2sar" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </article>
-            <article class="redes">
-                <ul class="sociales">
-                    <li><a href="#" target="__blank"><i class="fab fa-facebook"></i></a></li> 
-                    <li><a href="#" target="__blank"><i class="fab fa-instagram"></i></a></li> 
-                    <li><a href="#" target="__blank"><i class="fab fa-github"></i></a></li> 
-                    <li><a href="#" target="__blank"><i class="fab fa-linkedin"></i></a></li>          
-                </ul>
-            </article>
+            </section>
+            <<nav class="grid" id="sociales">
+                <a href="#">Inicio</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Mascotas</a>
+                <a href="#">Contacto</a>
+            </nav>
         </footer>
     </main>
     <script src="js/master.js"></script>
