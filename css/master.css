@@ -29,7 +29,7 @@ header{
     padding: 20px 0;
 }
 
-.galery{
+.gallery{
     grid-template-columns: repeat(4,1fr);
     gap: 10px;
 }
