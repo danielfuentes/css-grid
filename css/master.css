@@ -1,40 +1,75 @@
-#contenedor{
-    grid-template-rows: repeat(6, auto);
-}
-
+/*Generamos la maquetación en modo Mobile First Design*/
 header{
-    grid-template-columns: 10% 30%;
-    column-gap: 10px;    
     background-color: #B2B8C7;
+    font-size: 1.7rem;
+    text-align: center;
 }
-
-#menu{
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-
-.title{
-    font-size: 2.5rem;
-    padding: 20px 0;
-}
-
-.gallery{
-    grid-template-columns: repeat(4,1fr);
-    gap: 10px;
+p{
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    padding: 10px;
 }
 
 footer{
-    grid-template-columns: 1fr 2fr 1fr;
     background-color: #B2B8C7;
+    text-align: center;
 }
 
-#menuFooter{
-    margin: auto;
+/*Aquí agrego las medias queries - Comportamiento Responsive*/
+/*Dispositivos Tablets*/
+@media(min-width: 768px){
+    #contenedor{
+        grid-template-rows: repeat(6, auto);
+    }
+    
+    header{
+        grid-template-columns: 20% 60%;
+        column-gap: 10px;    
+    }
+    
+    #menu{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        font-family: 'Bebas Neue', cursive;
+    }
+    
+    .title{
+        font-size: 2.5rem;
+        padding: 20px 0;
+    }
+    
+    .gallery{
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+    
+    footer{
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    
+    #menuFooter{
+        margin: auto;
+    }
+    #menuFooter a{
+        font-size: 1.5rem;
+    }
+    
+    #sociales a{
+        font-size: 2rem;
+    }
+    
+    #mapa{
+        width:  600px;
+        height : 200px;
+        padding: 30px 0;
+    }
 }
 
-#sociales{
-    grid-template-columns: repeat(4, 1fr);
-}
-
-#mapa{
-    padding: 30px 0;
+/*Media querie para dispositivos desktops*/
+@media(min-width: 992px){
+    header{
+        grid-template-columns: 10% 40%;
+    }
+    .gallery{
+        grid-template-columns: repeat(4,1fr);
+    }
 }
