@@ -1,19 +1,16 @@
-/*Estas propiedades y valores sólo se toman en cuenta al momento 
-que el dispositivos tablets*/
-@media(min-width: 768px){
-  .grid{
-    display:grid;
-  }
-  
-  .space-between{
-    justify-content: space-between;
-  }
-  
-  .align-center{
-    align-items: center;
-  }
-  
-  .center{
-    justify-content: center;
-  }
+.grid{
+  display:grid;
 }
+  
+.space-between{
+  justify-content: space-between;
+}
+  
+.align-center{
+  align-items: center;
+}
+  
+.center{
+  justify-content: center;
+}
+

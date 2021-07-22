@@ -4,6 +4,13 @@ header{
     font-size: 1.7rem;
     text-align: center;
 }
+#menu{
+    font-size: 2.5rem;
+}
+.title{
+    font-size: 3rem;
+}
+
 p{
     font-family: 'Roboto', sans-serif;
     text-align: justify;
@@ -14,6 +21,9 @@ footer{
     background-color: #B2B8C7;
     text-align: center;
 }
+#menuFooter a, #sociales a{
+    font-size: 2rem;
+}
 
 /*Aquí agrego las medias queries - Comportamiento Responsive*/
 /*Dispositivos Tablets*/
@@ -23,13 +33,12 @@ footer{
     }
     
     header{
-        grid-template-columns: 20% 60%;
+        grid-template-columns: 15% 80%;
         column-gap: 10px;    
     }
     
     #menu{
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        font-family: 'Bebas Neue', cursive;
     }
     
     .title{
@@ -65,7 +74,7 @@ footer{
 /*Media querie para dispositivos desktops*/
 @media(min-width: 992px){
     header{
-        grid-template-columns: 10% 40%;
+        grid-template-columns: 10% 60%;
     }
     .gallery{
         grid-template-columns: repeat(4,1fr);
